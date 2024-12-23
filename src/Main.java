@@ -2,8 +2,10 @@
 public class Main {
     public static void main(String[] args) {
 
+
     }
 }
+
 
 //        human.setName("chandra");
 //        human.setAge(25);
@@ -146,21 +148,21 @@ public class Main {
 //        this.price = price;
 //    }
 //
-//    public void show(){
+//    public void multiply(){
 //        System.out.println(brand + " "+price + " :"+ name );
 //    }
 //}
 //Mobile mobile = new Mobile("Iphone",200);
 ////mobile.brand = "Apple";
 ////mobile.price = 1500;
-//        mobile.show();
+//        mobile.multiply();
 
     //class Mobile{
 //    String brand;
 //    int price;
 //    static String name;
 //
-//    public void show(){
+//    public void multiply(){
 //        System.out.println(brand + " "+price + " :"+ name );
 //    }
 //
@@ -177,7 +179,7 @@ public class Main {
 //    obj2.brand ="samsung";
 //    obj2.price =1500;
 //
-//    obj1.show();
+//    obj1.multiply();
 //    Mobile.show1(obj2);
 //class Human{
 //
@@ -227,28 +229,28 @@ public class Main {
 //    public A(){
 //        System.out.println("object created");
 //    }
-//    public void show(){
-//        System.out.println("in A show");
+//    public void multiply(){
+//        System.out.println("in A multiply");
 //    }
 //}
 //   A obj = new A();
-//        obj.show();
+//        obj.multiply();
 //class A{
-//    public void show(){
-//        System.out.println("In A show");
+//    public void multiply(){
+//        System.out.println("In A multiply");
 //    }
 //}
 //
 //class B extends A{
-//    public void show(){
-//        System.out.println("in B show");
+//    public void multiply(){
+//        System.out.println("in B multiply");
 //    }
 //}
 // A obj = new B();
-//        obj.show();
+//        obj.multiply();
 //
 //        obj = new B();
-//        obj.show();
+//        obj.multiply();
 //class Calc{
 //    public int add(int n1,int n2){
 //        return n1+n2;
@@ -270,8 +272,8 @@ public class Main {
 //}
 //AdvCalc obj = new AdvCalc();
 //class A{
-//    public void show(){
-//        System.out.println("In A show");
+//    public void multiply(){
+//        System.out.println("In A multiply");
 //    }
 //    class B{
 //        public void config(){
@@ -282,12 +284,60 @@ public class Main {
 // A obj = new A();
 //        A.B obj1 = obj.new B();
 //abstract class A{
-//    public abstract void show();
+//    public abstract void multiply();
 //}
 //A obj = new A() {
 //
-//            public void show() {
-//                System.out.println("in new show");
+//            public void multiply() {
+//                System.out.println("in new multiply");
 //            }
 //        };
-//        obj.show();
+//        obj.multiply();
+//enum Laptop{
+//    Macbook(2000),xps,Surface(1500),ThinkPad(1000);
+//
+//    private int price;
+//
+//    private Laptop() {
+//    }
+//
+//    private Laptop(int price) {
+//        this.price = price;
+//        System.out.println("in laptop" + ": " +this.name());
+//    }
+//
+//    public int getPrice() {
+//        return price;
+//    }
+//
+//    public void setPrice(int price) {
+//        this.price = price;
+//    }
+//}
+//        Laptop laptop = Laptop.Macbook;
+//        System.out.println(laptop +" :"+laptop.getPrice());
+//        for (Laptop laptop: Laptop.values()){
+//            System.out.println(laptop+ " : "+  laptop.getPrice() );
+//@FunctionalInterface
+//interface A{
+//    void multiply(int i, int j);
+//}
+//
+//interface X {
+//    int add(int i,int j);
+//}
+//class B implements A{
+//
+//
+//    public void multiply() {
+//        System.out.println("in B multiply");
+//    }
+//}
+// X obj1= (i,j) -> i+j;
+//        obj1.add(5,4);
+//
+//        A obj = (int i,int j) -> {
+//            int result = i * j;
+//            System.out.println(result);
+//        };
+//        obj.multiply(5, 4);
