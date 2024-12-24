@@ -2,9 +2,9 @@
 public class Main {
     public static void main(String[] args) {
 
-
     }
 }
+
 
 
 //        human.setName("chandra");
@@ -341,3 +341,87 @@ public class Main {
 //            System.out.println(result);
 //        };
 //        obj.multiply(5, 4);
+
+//Exceptions
+
+
+//int i = 20;
+//        int j = 0;
+//
+//        try {
+//            j = 18/i;
+//            if (j == 0)
+//                throw new ArithmeticException("This is not a error");
+//        }catch (ArithmeticException e){
+//            j = 18/1;
+//            System.out.println("Thats the default output");
+//        }
+//        catch (Exception e){
+//            System.out.println("Something went wrong" + e);
+//        }
+//
+//        System.out.println(j);
+
+//our own exception
+
+//class ChandraException extends Exception {
+//    public ChandraException(String string){
+//        super(string);
+//    }
+//}
+
+//        int i = 20;
+//        int j = 0;
+//
+//        try {
+//            j = 18/i;
+//            if (j == 0)
+//                throw new ChandraException("This is not a error");
+//        }catch (ChandraException e){
+//            j = 18/1;
+//            System.out.println("Thats the default output" + e );
+//        }
+//        catch (Exception e){
+//            System.out.println("Something went wrong" + e);
+//        }
+//
+//        System.out.println(j);
+
+//class A{
+//    public void show() throws ClassNotFoundException {
+//        Class.forName("Main");
+//    }
+//}
+//   static {
+//            System.out.println("class loaded");
+//        }
+//        A obj = new A();
+//        try {
+//            obj.show();
+//        } catch (ClassNotFoundException e) {
+//            throw new RuntimeException(e);
+//        }
+//System.out.println("Enter the number");
+//        try {
+//            int num = System.in.read();
+//            System.out.println("The Entered number is :" +(num - 48));
+//        } catch (IOException e) {
+//            throw new RuntimeException(e);
+//        }
+////        Scanner sc = new Scanner(System.in);
+////        int num = sc.nextInt();
+////        String s = sc.next();
+////        System.out.println("Entered number is :"+num);
+////        //System.out.println(s);
+////        String s = sc.findInLine("k");
+////        System.out.println(s);
+
+//try with Resources
+//try(BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+//            int a = Integer.parseInt(br.readLine());
+//
+//            System.out.println(a);
+//            //System.out.println("incremented number is: ");
+//        } catch (IOException e) {
+//            throw new RuntimeException(e);
+//        }
